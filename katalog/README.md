@@ -2,7 +2,7 @@
 https://tugas-pbp2.herokuapp.com/katalog/
 
 ## Bagan yang berisi request client ke web aplikasi berbasis Django
-<img src="D:\Dave\UI\sem 3\PBP\Blank diagram.png">
+![Blank diagram](https://user-images.githubusercontent.com/112268258/189858934-c71be7b5-f0c6-4875-923a-50e168eb1213.png)
 
 # PENJELASAN BAGAN :
 Pertama user akan membuka browser favorite mereka dan mengetik URL ke webiste yang mereka ingin buka.Ketika user tekan enter maka browser akan melakukan HTTP Request kepada server yang menyimpan data - data pada website tersebut.Permintaan akan masuk ke dalam server Django.Ketika aplikasi dijalankan maka aplikasi akan melihat URL route yang sudah diketikkan oleh user.Pada tugas ini user mengetik https://tugas-pbp2.herokuapp.com/katalog/ maka akan route dari url tersebut adalah /katalog
