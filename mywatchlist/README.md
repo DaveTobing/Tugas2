@@ -15,6 +15,13 @@ Perbedaanya adalah:
 3) Nama dari file JSON akan diakhiri dengan ekstensi .json, file XML akan diakhiri dengan ekstensi .xml. dan file HTML akan diakhir dengan .html
 
 # Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
+sebuah proses dalam transfer data-data yang ingin ditampilkan pada sebuah web
+caranya:
+1) browser request halaman html dan server akan mengembalikan sebuah file HTML
+2) browser request style sheet dan server akan mengembalikan sebuah file css
+3) browser request JPG image dan server akan mengemablikan sebuah file JPG
+4) browser request Javascript code dan server akan mengembalikan sebuah file JS 
+5) browser request data dan server akan mengembalikan sebuah data dalam bentuk XML/JSON
 
 # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
