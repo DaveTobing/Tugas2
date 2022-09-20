@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from django.http import HttpResponse
 from django.core import serializers
 from mywatchlist.models import MyWatchList
@@ -19,6 +18,8 @@ def show_html(request):
     data_watchlist = MyWatchList.objects.all()
     context = {
     'list_movie': data_watchlist,
+    'nama': 'Dave Matthew Peter Lumban Tobing',
+    'NPM' : '2106700870'
     }
     return render(request, "mywatchlist.html", context)
 
