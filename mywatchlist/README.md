@@ -65,5 +65,14 @@ def show_start(request):
 
 Dan kemudian untuk melihat isi dari json.xml dan html maka lakukan "python manage.py runserver" pada cmd dan buka http://localhost:8000/start/ pada browser jika ingin lihat mywatchlist dalam bentuk html maka http://localhost:8000/mywatchlist/html jika ingin lihat dalam bentuk json maka http://localhost:8000/mywatchlist/json dan jika ingin dalam bentuk xml maka http://localhost:8000/mywatchlist/xml
 
+# Mengakses tiga URL di poin 6 menggunakan Postman, menangkap screenshot, dan menambahkannya ke dalam README.md
+-- html--
+![Screenshot 2022-09-20 215915](https://user-images.githubusercontent.com/112268258/191300021-17e0a85a-ad65-423d-ae86-4207cc84311c.png)
+
+-- json --
+![Screenshot 2022-09-20 215934](https://user-images.githubusercontent.com/112268258/191300167-ef3eff9c-78c1-4fad-8ce6-4270635fc9d6.png)
+
+-- xml --
+![Screenshot 2022-09-20 215953](https://user-images.githubusercontent.com/112268258/191300224-37bfabe0-b3b8-42d7-b775-03b77b95b059.png)
 
 
