@@ -16,17 +16,13 @@ def show_json(request):
 
 def show_html(request):
     data_watchlist = MyWatchList.objects.all()
+    already_watched = MyWatchList.objects.filter(watched = 'watched').count()
+    not_watched = MyWatchList.objects.filter(watched = 'have not watched').count()
     context = {
     'list_movie': data_watchlist,
+    'watchlist': True if already_watched >= not_watched else False,
     'nama': 'Dave Matthew Peter Lumban Tobing',
     'NPM' : '2106700870'
     }
     return render(request, "mywatchlist.html", context)
 
-
-def show_start(request):
-    context = {
-    'nama': 'Dave Matthew Peter Lumban Tobing',
-    'NPM' : '2106700870'
-    }
-    return render(request, "start.html", context)

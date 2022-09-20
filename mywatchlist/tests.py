@@ -1,6 +1,5 @@
 from django.test import TestCase, Client
 
-import mywatchlist
 
 # Create your tests here.
 

@@ -3,110 +3,110 @@
         "model": "mywatchlist.mywatchlist",
         "pk": 1,
         "fields": {
-            "watched" : "already",
+            "watched" : "have not watched",
             "title"  : "The social network",
             "rating" : 3,
             "release_date" : "November 3, 2010",
-            "review" : "x"
+            "review" : "Arguably the best film of 21st century. Aaron Sorkin's razor sharp dialogues juggling around two at times three timelines and absolutely brilliant direction by David Fincher makes this billionaire drama worth a watch."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 2,
         "fields": {
-            "watched" : "already",
+            "watched" : "watched",
             "title"  : "Fast and Furious 6",
             "rating" : 4,
-            "release_date" : "x",
-            "review" : "x"
+            "release_date" : "May 24 2013",
+            "review" : "Great movie all in all very entertaining and drama like gets you on the edge of your seat as well as the other fast and furious . It’s tho truly incredible movie. It’s worth your time!"
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 3,
         "fields": {
-            "watched" : "already",
+            "watched" : "watched",
             "title"  : "Spiderman no way home",
-            "rating" : 3,
-            "release_date" : "x",
-            "review" : "x"
+            "rating" : 4,
+            "release_date" : "December 15 2021",
+            "review" : "Absolutely loved this movie I will say the first half hour felt kinda slow and took a bit to get the ball rolling but once it did IT NEVER STOPPED! Action was consistent and great "
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 4,
         "fields": {
-            "watched" : "already",
+            "watched" : "watched",
             "title"  : "Thor love and Thunder",
-            "rating" : 3,
+            "rating" : 4,
             "release_date" : "July 6 2022",
-            "review" : "x"
+            "review" : "funny, romantic, and amazing superhero film that welcomes newcomers to the MCU "
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 5,
         "fields": {
-            "watched" : "already",
+            "watched" : "watched",
             "title"  : "Guardians of the Galaxy",
             "rating" : 3,
             "release_date" : "August 1 2014",
-            "review" : "x"
+            "review" : "Great movie, it has a great storyline with some plotholes but nothing that can't be overlooked"
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 6,
         "fields": {
-            "watched" : "already",
+            "watched" : "watched",
             "title"  : "Aquaman",
-            "rating" : 9,
-            "release_date" : "x",
-            "review" : "x"
+            "rating" : 3,
+            "release_date" : "December 21 2018",
+            "review" : "GOOD MOVIE! DC comics have done quiet a good job with this movie unlike their recent projects(except Wonderwomen) which for some reasons didn't do that good."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 7,
         "fields": {
-            "watched" : "already",
-            "title"  : "The social network",
-            "rating" : 8,
-            "release_date" : "x",
-            "review" : "x"
+            "watched" : "watched",
+            "title"  : "Top Gun - maverick",
+            "rating" : 5,
+            "release_date" : "May 27, 2022",
+            "review" : "Great Movie there was a fantastic balance of dominating and quiet personalities, big egos and humility, hotshots and not-so-confident pilots, and hotties and geeks. Nothing was overdone, not even the humor or drama"
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 8,
         "fields": {
-            "watched" : "already",
-            "title"  : "The social network",
-            "rating" : 8,
-            "release_date" : "x",
-            "review" : "x"
+            "watched" : "have not watched",
+            "title"  : "Parasite",
+            "rating" : 4,
+            "release_date" : "June 21, 2019",
+            "review" : "I had no expectations walking into Parasite, but now my love and appreciation for it has breached the stratosphere. This is definitely one of the best movies of 2019, and it's bound to be a classic."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 9,
         "fields": {
-            "watched" : "already",
-            "title"  : "The social network",
-            "rating" : 8,
-            "release_date" : "x",
-            "review" : "x"
+            "watched" : "watched",
+            "title"  : "Pokémon Detective Pikachu",
+            "rating" : 4,
+            "release_date" : "May 8, 2019",
+            "review" : "A fun loving movie that can still be understood by those who aren't avid Pokémon fans if you were thinking otherwise"
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk": 10,
         "fields": {
-            "watched" : "already",
-            "title"  : "The social network",
-            "rating" : 8,
-            "release_date" : "x",
-            "review" : "x"
+            "watched" : "watched",
+            "title"  : "Suicide Squad",
+            "rating" : 4,
+            "release_date" : "August 3 2016",
+            "review" : "An absolute blast! I had so much fun with this movie. There are so many things I loved about this movie."
         }
     }
 ]
