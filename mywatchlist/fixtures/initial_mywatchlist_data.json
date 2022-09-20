@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 1,
+        "fields": {
+            "watched" : "already",
+            "title"  : "The social network",
+            "rating" : 3,
+            "release_date" : "November 3, 2010",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 2,
+        "fields": {
+            "watched" : "already",
+            "title"  : "Fast and Furious 6",
+            "rating" : 4,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 3,
+        "fields": {
+            "watched" : "already",
+            "title"  : "Spiderman no way home",
+            "rating" : 3,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 4,
+        "fields": {
+            "watched" : "already",
+            "title"  : "Thor love and Thunder",
+            "rating" : 3,
+            "release_date" : "July 6 2022",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 5,
+        "fields": {
+            "watched" : "already",
+            "title"  : "Guardians of the Galaxy",
+            "rating" : 3,
+            "release_date" : "August 1 2014",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 6,
+        "fields": {
+            "watched" : "already",
+            "title"  : "Aquaman",
+            "rating" : 9,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 7,
+        "fields": {
+            "watched" : "already",
+            "title"  : "The social network",
+            "rating" : 8,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 8,
+        "fields": {
+            "watched" : "already",
+            "title"  : "The social network",
+            "rating" : 8,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 9,
+        "fields": {
+            "watched" : "already",
+            "title"  : "The social network",
+            "rating" : 8,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 10,
+        "fields": {
+            "watched" : "already",
+            "title"  : "The social network",
+            "rating" : 8,
+            "release_date" : "x",
+            "review" : "x"
+        }
+    }
+]
