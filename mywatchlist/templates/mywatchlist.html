@@ -1,13 +1,8 @@
-<head>
-  <link rel="stylesheet" href="mywatchlist.css">
-</head>
-
 {% extends 'base.html' %}
 
 {% block content %}
 
 
-<body>
   <h1>Tugas 3 PBP/PBD</h1>
 
   <h2>Name: {{nama}}</h2>
@@ -21,28 +16,26 @@
   <h3>Wah kamu sedikit menonton</h3>
   {% endif %}
 
-  <div class="table-wrapper">
-    <table class="fl-table">
-      <tr>
-        <th>Watched</th>
-        <th>Title</th>
-        <th>Rating</th>
-        <th>Release_date</th>
-        <th>Review</th>
-      </tr>
-      {% comment %} Add the data below this line {% endcomment %}
-      {% for movie in list_movie %}
-      <tr>
-        <th>{{movie.watched}}</th>
-        <th>{{movie.title}}</th>
-        <th>{{movie.rating}}</th>
-        <th>{{movie.release_date}}</th>
-        <th>{{movie.review }}</th>
-      </tr>
-      {% endfor %}
-    </table>
-  
-  </div>
+  <table>
+    <tr>
+      <th>Watched</th>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release_date</th>
+      <th>Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for movie in list_movie %}
+    <tr>
+      <th>{{movie.watched}}</th>
+      <th>{{movie.title}}</th>
+      <th>{{movie.rating}}</th>
+      <th>{{movie.release_date}}</th>
+      <th>{{movie.review }}</th>
+    </tr>
+    {% endfor %}
+  </table>
+
+
   
 {% endblock content %}
-</body>
