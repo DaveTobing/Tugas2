@@ -1,5 +1,11 @@
 ## TUGAS PBP 3
 
+#links
+html : https://tugas3-pbp.herokuapp.com/mywatchlist/html/
+json : https://tugas3-pbp.herokuapp.com/mywatchlist/json/
+xml : https://tugas3-pbp.herokuapp.com/mywatchlist/xml/
+
+
 # Jelaskan perbedaan antara JSON, XML, dan HTML!
 JSON = JavaScript Object Notation atau yang lebih dikenal dengan JSON adalah merupakan sebuah format yang digunakan untuk menyimpan, membaca, serta menukar informasi dari web server sehingga dapat dibaca oleh para pengguna. Biasanya, file JSON berisikan teks.
 
