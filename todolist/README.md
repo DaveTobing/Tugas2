@@ -31,5 +31,5 @@ Ketiga membuat beberapa function pada file views.py di dalam folder todolist:
 - register -> membuat akun baru untuk user jika tidak mempunyai akun
 - login_user ->  melakukan login dengan mengisi username dan password dari akun user
 - logout_user -> untuk mengeluarkan akun user 
-- new_task -> meminta user untuk mengisi deskripsi dan judul dari tugas-tugas yang ingin ditambahkan oleh user
+- new_task -> meminta user untuk mengisi deskripsi dan judul dari tugas-tugas yang ingin ditambahkan 
 
