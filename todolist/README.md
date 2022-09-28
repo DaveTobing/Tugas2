@@ -1,7 +1,7 @@
 # Link heroku
 - https://tugas3-pbp.herokuapp.com/todolist
 
-# 1 Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>
+# 1 Apa kegunaan {% csrf_token %} pada elemen "<form>" ? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>
 
 kegunaan csrf_token adalah sejenis token yang mencegah penyerangan CSRF sehingga token ini harus unik agar penyerang susah untuk menebak . Jika sebuah form tidak ada token tersebut maka akan terdapat serangan CSRF yang membuat penyerang tidak dapat membuat permintaan yang valid ke server.
 
