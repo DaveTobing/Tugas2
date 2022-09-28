@@ -5,8 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login
-from django.contrib.auth import logout
+from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import redirect
 from todolist.forms import create_form
 from todolist.models import Task
@@ -69,17 +68,16 @@ def logout_user(request):
 @login_required(login_url='/todolist/login/')
 def new_task(request):
     if request.user.is_authenticated:
-        my_form = create_form(request.POST)
+        my_form = create_form()
         if request.method == 'POST':
+            my_form = create_form(request.POST)
             if my_form.is_valid():
                 title = my_form.cleaned_data['title']
                 description = my_form.cleaned_data['description']
                 newtask = Task.objects.create( title=title, description=description, user=request.user, date= datetime.date.today())
                 return redirect('todolist:show_todolist')
 
-        context = {
-                'form': my_form,
-            }
+        context = {'form': my_form}
         return render(request, 'create-task.html', context)    
     else:
         return redirect('todolist:login')
