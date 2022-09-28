@@ -13,7 +13,7 @@ Bisa dengan menggunakan tag <form> yang terdapat pada HTML.Tag ini memiliki bebe
 <form action="prosess.php" method="GET">
 <!-- form field di sini -->
 </form>
-```html
+``` html
     
 - action untuk menentukan aksi yang akan dilakukan saat data dikirim dengan mengisi dengan sebuah url 
 - method metode pengiriman data bisa GET atau POST dimana POST akan mengirimkan data langsung ke action untuk ditampung, tanpa menampilkan pada URL sedangkan method   GET akan menampilkan data/nilai pada URL, kemudian akan ditampung oleh action
@@ -21,9 +21,9 @@ Bisa dengan menggunakan tag <form> yang terdapat pada HTML.Tag ini memiliki bebe
 Dan didalam sebuah form perlu sebuah Field yang merupakan sebuah ruas yang dapat diisi dengan data.
 Contoh field:
     
-'''
+``` 
 <input type="text" name="info" />
-'''
+```html
     
 Field memiliki beberapa atribut yang harus diberikan:
 - type merupakan type dari field.
