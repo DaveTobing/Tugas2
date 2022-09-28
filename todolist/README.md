@@ -7,7 +7,22 @@ kegunaan csrf_token adalah sejenis token yang mencegah penyerangan CSRF sehingga
 
 
 # 2 Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }})? Jelaskan secara gambaran besar bagaimana cara membuat <form> secara manual.
+Bisa dengan menggunakan tag <form> yang terdapat pada HTML.Tag ini memiliki beberapa atribut yang harus diberikan,Contoh:
 
+<form action="prosess.php" method="GET">
+<!-- form field di sini -->
+</form>
+- action untuk menentukan aksi yang akan dilakukan saat data dikirim dengan mengisi dengan sebuah url 
+- method metode pengiriman data bisa GET atau POST dimana POST akan mengirimkan data langsung ke action untuk ditampung, tanpa menampilkan pada URL sedangkan method   GET akan menampilkan data/nilai pada URL, kemudian akan ditampung oleh action
+
+Dan didalam sebuah form perlu sebuah Field yang merupakan sebuah ruas yang dapat diisi dengan data.
+Contoh field:
+
+<input type="text" name="info" />
+
+Field memiliki beberapa atribut yang harus diberikan:
+- type merupakan type dari field.
+- name merupakan nama dari field yang akan menjadi kunci dan variabel di dalam program.
 
 # 3 Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.
 
