@@ -1,19 +1,39 @@
 # Link heroku
+- https://tugas3-pbp.herokuapp.com/todolist
 
-
-# Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>
+# 1 Apa kegunaan {% csrf_token %} pada elemen "<form>" ? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>
 
 kegunaan csrf_token adalah sejenis token yang mencegah penyerangan CSRF sehingga token ini harus unik agar penyerang susah untuk menebak . Jika sebuah form tidak ada token tersebut maka akan terdapat serangan CSRF yang membuat penyerang tidak dapat membuat permintaan yang valid ke server.
 
 
-# Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }})? Jelaskan secara gambaran besar bagaimana cara membuat <form> secara manual.
+# 2 Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }})? Jelaskan secara gambaran besar bagaimana cara membuat <form> secara manual.
+Bisa dengan menggunakan tag <form> yang terdapat pada HTML.Tag ini memiliki beberapa atribut yang harus diberikan,Contoh:
 
+``` 
+<form action="prosess.php" method="GET">
+<!-- form field di sini -->
+</form>
+```
+    
+- action -> menentukan aksi yang akan dilakukan saat data dikirim dengan mengisi dengan sebuah url 
+- method -> pengiriman data dengan menggunakan GET atau POST dimana POST akan mengirimkan data langsung ke action untuk ditampung, tanpa menampilkan pada URL sedangkan method GET akan menampilkan data/nilai pada URL, kemudian akan ditampung oleh action
 
-# Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.
+Dan didalam sebuah form perlu sebuah Field yang merupakan sebuah ruas yang dapat diisi dengan data.
+Contoh field:
+    
+``` 
+<input type="text" name="info" />
+```
+    
+Field memiliki beberapa atribut yang harus diberikan:
+- type merupakan type dari field.
+- name merupakan nama dari field yang akan menjadi kunci dan variabel di dalam program.
+
+# 3 Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.
 
 user akan melakukan HTTP Request ke http://host/path pada broswer dan server akan menerima HTTP request tersebut dan menyesuaikan dengan user pada kasus user akan mengisi sebuah form  maka server akan membuat sebuah halaman HTML berjenis form pada browser yang dimana user akan menginput data- data yang diperlukan pada halaman browwser tersebut dan setelah user sudah siap mengisi data - data tersebut maka server akan menyimpan input dari user dan akan disimpan pada server dan kemudian data - data tersebut akan ditampilkan pada halaman broswer sesuai dengan path yang dihasilkan di views.py
 
-# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+# 4 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
 Pertama melakukan perintah python manage.py startapp todolist yang berguna untuk membuat sebuah django-app dan folder bernama todolist dan kemudian tambahkan todolist pada INSTALLED_APPS di file settings.py di folder project_django. Kemudian membuat sebuah function di file models.py di folder todolist untuk menyimpan semua data-data ke server django.
 
