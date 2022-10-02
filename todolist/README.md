@@ -1,3 +1,5 @@
+## Tugas 4
+
 # Link heroku
 - https://tugas3-pbp.herokuapp.com/todolist
 
@@ -53,3 +55,55 @@ Ketiga membuat beberapa function pada file views.py di dalam folder todolist:
 - logout_user -> untuk mengeluarkan akun user 
 - new_task -> meminta user untuk mengisi deskripsi dan judul dari tugas-tugas yang ingin ditambahkan 
 
+
+
+## Tugas 5
+
+# 1 Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+
+- Internal CSS adalah kode CSS yang dibuat di dalam tag <style> pada file HTML yang dituliskan di bagian (header) file HTML. 
+        Kekurangan -> Tidak efisien apabila ingin menggunakan css yang sama dalam secara terus menurus di file HTML
+        Kelebihan ->  Class dan ID bisa digunakan oleh internal stylesheet 
+
+- Inline CSS adalah kode CSS yang dibuat langsung pada elemen HTML. Dimana Setiap elemen HTML memiliki atribut style.
+        Kekurangan -> kode CSS hanya dapat diterapkan pada satu elemen pada file HTML 
+        Kelebihan -> Berguna untuk memperbaiki code dengan cepat
+
+
+- Eksternal CSS adalah kode CSS yang ditulis secara terpisah pada sebuah file CSS. Untuk menghubungkan file eksternal CSS dengan file HTML maka file css akan diletakkan pada bagian <head> pada file HTML.
+        Kekurangan -> Halaman HTML tidak ditampilkan secara sempurna apabila file CSS tidak dipanggil atau belum selesai.
+        Kelebihan -> File CSS yang sama dapat digunakan pada banyak file HTML, Struktur dari code HTML menjadi rapi
+
+
+# 2 Jelaskan tag HTML5 yang kamu ketahui.
+    - <a> -> mendefenisikan sebuah hyperlink yang dimana link tersebut dapat merujuk ke halaman lain
+    - <b> -> membuat text menjadi bold
+    - <body> -> mendefenisikan isi dari suatu HTML yang akan ditampilkan pada browsernya.
+    - <br> -> membuat sebuah line break.
+    - <button> -> membuat sebuah button yang dapat di click
+    - <div>	->  mengelompokkan elemen atau tag agar menjadi satu group
+    - <form> ->	membuat sebuah form pada HTML yang dapat di-input oleh user
+    - <header> -> memberikan informasi tentang dokumen
+    - <h1> to <h6> -> headings pada html
+    - <input> -> mendefenisikan input untuk user
+    - <link> ->	mendefenisikan hubungan file html dengan file eksternal 
+    - <ol> -> mendefenisikan sebuah  ordered list.
+    - <p> -> membuat sebuah paragraph
+    - <style> -> menambahkan design pada html seperti font,warna atau ukuran font dll
+    - <table> -> membuat sebuah table 
+    - <td> -> mendefenisikan cell pada sebuah table
+    - <textarea> -> sebuah tempat untuk user dapat meng-input sebuah text
+    - <th> -> header  dari sebuah table.
+    - <title> -> judul dokumen HTML.
+    - <tr> -> mendefenisikan row dari sebuah table
+    - <u> -> mendefenisikan text mempunyai garis bawah
+    - <ul> -> mendefenisikan sebuah unordered list.
+
+
+# 3 Jelaskan tipe-tipe CSS selector yang kamu ketahui.
+    - tag -> selektor untuk memilih elemen html berdasarkan nama tag
+    - class -> selektor untuk memilih elemen html berdasarkan nama class
+    - universal -> selektor untuk memilih semua elemen pada html dengan menggunakan "*"
+
+
+# 4 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.

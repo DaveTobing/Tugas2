@@ -7,45 +7,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<h4>Username: {{user_name}}</h4>
-
 <body class="p-3 mb-2 bg-dark text-white">
-    <div class="container text-center">
-        <h1>Tugas 4 PBP/PBD</h1>
-            <h2>To-Do List</h2>
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                        <table class="table table-dark table-striped">
-                            <tr>
-                            <th>Date</th>
-                            <th>Task title</th>
-                            <th>Task description</th>
-                            </tr>
-                        {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
-                        {% for task in list %}
-                            <tr>
-                                <th>{{task.date}}</th>
-                                <th>{{task.title}}</th>
-                                <th>{{task.description}}</th>
-                            </tr>
-                        {% endfor %}
-                        </table>
+    <div class="card text-center">
+        <div class="card text-white bg-dark" >
+            <div class="card-header" >
+                <h1>Tugas 4 PBP/PBD</h1>
+                <h2>To-Do List</h2>
+                    <div class="row justify-content-md-center">
+                        <div class="col col-lg-4">
+                            <div class="card text-white bg-dark mb-3">
+                                <table class="table table-dark table-striped">
+                                    <tr>
+                                    <th>Date</th>
+                                    <th>Task title</th>
+                                    <th>Task description</th>
+                                    </tr>
+                                {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+                                {% for task in list %}
+                                    <tr>
+                                        <th>{{task.date}}</th>
+                                        <th>{{task.title}}</th>
+                                        <th>{{task.description}}</th>
+                                    </tr>
+                                {% endfor %}
+                                </table>
+                            </div>
+                            
+                        </div>
                     </div>
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}  
+                    <h5>Sesi terakhir login: {{ last_login }}</h5>
+    
+                    <h4>{{user_name}}</h4>
+                    
+       
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
                 </div>
-                {% if messages %}
-                    <ul>
-                        {% for message in messages %}
-                            <li>{{ message }}</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}  
-                <h5>Sesi terakhir login: {{ last_login }}</h5>
-                <a class="btn btn-dark" href="{% url 'todolist:new_task' %}">Tambah Task Baru</a>
-                <a class="btn btn-dark" href="{% url 'todolist:logout' %}">Logout</a>
-   
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-                
             </div>
+
+        </div>
+        <div class="card text-center">
+            <a class="btn btn-dark" href="{% url 'todolist:new_task' %}">Tambah Task Baru</a>
+            <a class="btn btn-dark" href="{% url 'todolist:logout' %}">Logout</a>
+        </div>
+    
+        
+
+        
 </body>
 
 {% endblock content %}
