@@ -104,12 +104,14 @@ Ketiga membuat beberapa function pada file views.py di dalam folder todolist:
 
 
 # 3 Jelaskan tipe-tipe CSS selector yang kamu ketahui.
+
     - tag -> selektor untuk memilih elemen html berdasarkan nama tag
     - class -> selektor untuk memilih elemen html berdasarkan nama class
     - universal -> selektor untuk memilih semua elemen pada html dengan menggunakan "*"
 
 
 # 4 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
     Pertama menambahkan link bootstrap pada bagian head di tiap file html dan kemudian menambahkan 
     
     ``` 
