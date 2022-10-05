@@ -6,9 +6,10 @@
 {% block content %}
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
-<body class="p-3 mb-2 bg-dark text-white">
+<body class="p-3 mb-2 bg-dark text-white" class="alert alert-success" role="alert">
         <div class="container text-center">
             <h1>Login</h1>
             <div class="row justify-content-md-center">
@@ -39,7 +40,7 @@
                     {% endfor %}
                 </ul>
             {% endif %}     
-            Belum mempunyai akun? <a class="btn btn-dark" href="{% url 'todolist:register' %}"> Buat Akun </a>
+            Belum mempunyai akun? <a class="btn btn-primary" href="{% url 'todolist:register' %}"> Buat Akun </a>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
         </div>
