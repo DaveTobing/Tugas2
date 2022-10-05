@@ -77,72 +77,73 @@ Ketiga membuat beberapa function pada file views.py di dalam folder todolist:
 
 # 2 Jelaskan tag HTML5 yang kamu ketahui.
 
-    ``` 
-    - <a> -> mendefenisikan sebuah hyperlink yang dimana link tersebut dapat merujuk ke halaman lain
-    - <b> -> membuat text menjadi bold
-    - <body> -> mendefenisikan isi dari suatu HTML yang akan ditampilkan pada browsernya.
-    - <br> -> membuat sebuah line break.
-    - <button> -> membuat sebuah button yang dapat di click
-    - <div>	->  mengelompokkan elemen atau tag agar menjadi satu group
-    - <form> ->	membuat sebuah form pada HTML yang dapat di-input oleh user
-    - <header> -> memberikan informasi tentang dokumen
-    - <h1> to <h6> -> headings pada html
-    - <input> -> mendefenisikan input untuk user
-    - <link> ->	mendefenisikan hubungan file html dengan file eksternal 
-    - <ol> -> mendefenisikan sebuah  ordered list.
-    - <p> -> membuat sebuah paragraph
-    - <style> -> menambahkan design pada html seperti font,warna atau ukuran font dll
-    - <table> -> membuat sebuah table 
-    - <td> -> mendefenisikan cell pada sebuah table
-    - <textarea> -> sebuah tempat untuk user dapat meng-input sebuah text
-    - <th> -> header  dari sebuah table.
-    - <title> -> judul dokumen HTML.
-    - <tr> -> mendefenisikan row dari sebuah table
-    - <u> -> mendefenisikan text mempunyai garis bawah
-    - <ul> -> mendefenisikan sebuah unordered list.
-    ```
+```
+- <a> -> mendefenisikan sebuah hyperlink yang dimana link tersebut dapat merujuk ke halaman lain
+- <b> -> membuat text menjadi bold
+- <body> -> mendefenisikan isi dari suatu HTML yang akan ditampilkan pada browsernya.
+- <br> -> membuat sebuah line break.
+- <button> -> membuat sebuah button yang dapat di click
+- <div>	->  mengelompokkan elemen atau tag agar menjadi satu group
+- <form> ->	membuat sebuah form pada HTML yang dapat di-input oleh user
+- <header> -> memberikan informasi tentang dokumen
+- <h1> to <h6> -> headings pada html
+- <input> -> mendefenisikan input untuk user
+- <link> ->	mendefenisikan hubungan file html dengan file eksternal 
+- <ol> -> mendefenisikan sebuah  ordered list.
+- <p> -> membuat sebuah paragraph
+- <style> -> menambahkan design pada html seperti font,warna atau ukuran font dll
+- <table> -> membuat sebuah table 
+- <td> -> mendefenisikan cell pada sebuah table
+- <textarea> -> sebuah tempat untuk user dapat meng-input sebuah text
+- <th> -> header  dari sebuah table.
+- <title> -> judul dokumen HTML.
+- <tr> -> mendefenisikan row dari sebuah table
+- <u> -> mendefenisikan text mempunyai garis bawah
+- <ul> -> mendefenisikan sebuah unordered list.
+```
+   
 
 
 # 3 Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
-    - tag -> selektor untuk memilih elemen html berdasarkan nama tag
-    - class -> selektor untuk memilih elemen html berdasarkan nama class
-    - universal -> selektor untuk memilih semua elemen pada html dengan menggunakan "*"
+- tag -> selektor untuk memilih elemen html berdasarkan nama tag
+- class -> selektor untuk memilih elemen html berdasarkan nama class
+- universal -> selektor untuk memilih semua elemen pada html dengan menggunakan "*"
 
 
 # 4 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
-    Pertama menambahkan link bootstrap pada bagian head di tiap file html dan kemudian menambahkan 
-    
-    ``` 
-    class="p-3 mb-2 bg-dark text-white" class="alert alert-success" role="alert" 
-    ```
-    
-    pada bagian body di tiap file html agar websitenya responsive dan mempunyai background hitam dengan text berwarna putih
+Pertama menambahkan link bootstrap pada bagian head di tiap file html dan kemudian menambahkan 
 
-    kemudian pada file login.html , register.html dan create-task.html menambahkan
+``` 
+class="p-3 mb-2 bg-dark text-white" class="alert alert-success" role="alert" 
+```
 
-    ``` 
-    class="container text-center" class="table table-dark table-striped"  <div class="col col-lg-6">  <div class="row justify-content-md-center">
-    ```
+pada bagian body di tiap file html agar websitenya responsive dan mempunyai background hitam dengan text berwarna putih
 
-    - container text-center -> didalam container tiap text akan di align ke tengah pada website
-    - table table-dark table-striped -> design dari table 
-    - col col-lg-6 - >Kelas kolom menunjukkan jumlah kolom yang ingin Anda gunakan dari kemungkinan 12 per baris. untuk kasus ini akan mempunyai 2 column dengan lebar yang sama
-    - row justify-content-md-center -> isi dari container akan dibuat ke tengah pada file html
+kemudian pada file login.html , register.html dan create-task.html menambahkan
 
-    
-    pada file todolist.html terdapat beberapa class:
+``` 
+class="container text-center" class="table table-dark table-striped"  <div class="col col-lg-6">  <div class="row justify-content-md-center">
+```
 
-    ``` 
-    class="row row-cols-1 row-cols-md-3 g-4" class="col w-50" class="card text-center" class="card text-bg-secondary mb-3" class="card text-center"  class="card-footer" class="row align-item-start" class="card-body"  class="card-header"
-    ```
+- container text-center -> didalam container tiap text akan di align ke tengah pada website
+- table table-dark table-striped -> design dari table 
+- col col-lg-6 - >Kelas kolom menunjukkan jumlah kolom yang ingin Anda gunakan dari kemungkinan 12 per baris. untuk kasus ini akan mempunyai 2 column dengan lebar yang sama
+- row justify-content-md-center -> isi dari container akan dibuat ke tengah pada file html
 
-    - class=row row-cols-1 row-cols-md-3 g-4 -> membuat cards dalam 1 column dengan membagi cards tersebbut menjadi 3 cards yang sama
-    - col w-50 -> membuat sebauh column dengan width 50
-    - card text-center -> text pada card akan di tengah
-    - card text-bg-secondary mb-3 -> background colour dari card
-    - card-footer -> footer dari sebuah card
-    - row align-item-start
-    - card-body  -> body dari sebuah card
-    - card-header -> header dari sebuah card
+
+pada file todolist.html terdapat beberapa class:
+
+``` 
+class="row row-cols-1 row-cols-md-3 g-4" class="col w-50" class="card text-center" class="card text-bg-secondary mb-3" class="card text-center"  class="card-footer" class="row align-item-start" class="card-body"  class="card-header"
+```
+
+- class=row row-cols-1 row-cols-md-3 g-4 -> membuat cards dalam 1 column dengan membagi cards tersebbut menjadi 3 cards yang sama
+- col w-50 -> membuat sebauh column dengan width 50
+- card text-center -> text pada card akan di tengah
+- card text-bg-secondary mb-3 -> background colour dari card
+- card-footer -> footer dari sebuah card
+- row align-item-start
+- card-body  -> body dari sebuah card
+- card-header -> header dari sebuah card
