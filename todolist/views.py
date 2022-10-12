@@ -110,9 +110,9 @@ def add_task_ajax(request):
             data['date'] = datetime.date.today()
             return JsonResponse(data);
 
-        context = {
-            'form': form,
-        }
-        return render(request, 'create-task.html', context)
+        # context = {
+        #     'form': form,
+        # }
+        # return render(request, 'create-task.html', context)
     else:
         return redirect('todolist:login')
