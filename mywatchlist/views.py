@@ -25,4 +25,3 @@ def show_html(request):
     'NPM' : '2106700870'
     }
     return render(request, "mywatchlist.html", context)
-

@@ -17,7 +17,3 @@ class watchlist_test(TestCase):
     def test_xml(self):
         response = Client().get('/mywatchlist/xml/')
         self.assertEqual(response.status_code,200)
-
-    # def test_html_template(self):
-    #     response = Client().get('/mywatchlist/html/')
-    #     self.assertTemplateUsed(response, 'mywatchlist.html')

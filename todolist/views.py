@@ -1,4 +1,7 @@
+from audioop import add
 import datetime
+from hashlib import new
+import json
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth.forms import UserCreationForm
@@ -9,6 +12,9 @@ from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import redirect
 from todolist.forms import create_form
 from todolist.models import Task
+from django.http import JsonResponse
+from django.http import HttpResponse, HttpResponseNotFound
+from django.core import serializers
 # Create your views here.
 
 @login_required(login_url='/todolist/login/')
@@ -79,5 +85,34 @@ def new_task(request):
 
         context = {'form': my_form}
         return render(request, 'create-task.html', context)    
+    else:
+        return redirect('todolist:login')
+
+
+def get_json(request):
+    data = Task.objects.filter(user = request.user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+
+@login_required(login_url='/todolist/login/')
+def add_task_ajax(request):
+    if request.user.is_authenticated:
+        form = create_form(request.POST)
+        data = {}
+       
+        if request.method == 'POST' and form.is_valid():
+            title = form.cleaned_data['title']
+            description = form.cleaned_data['description']
+            new_task = Task.objects.create(title=title, description=description, user=request.user, date=datetime.date.today())
+            data['title'] = title
+            data['description'] = description
+            data['user'] = request.user
+            data['date'] = datetime.date.today()
+            return JsonResponse(data);
+
+        context = {
+            'form': form,
+        }
+        return render(request, 'create-task.html', context)
     else:
         return redirect('todolist:login')

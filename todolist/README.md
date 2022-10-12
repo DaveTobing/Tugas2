@@ -101,8 +101,6 @@ Ketiga membuat beberapa function pada file views.py di dalam folder todolist:
 - <u> -> mendefenisikan text mempunyai garis bawah
 - <ul> -> mendefenisikan sebuah unordered list.
 ```
-   
-
 
 # 3 Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
